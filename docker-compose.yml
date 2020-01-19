@@ -4,6 +4,10 @@ services:
     ports:
       - "5432:5432"
     image: postgres
+    environment:
+      POSTGRES_DB: 'users-app'
+      POSTGRES_USER: 'users-app'
+      POSTGRES_PASSWORD: 'users-app'
 
   backend:
     depends_on:
