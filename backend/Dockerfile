@@ -12,5 +12,6 @@ COPY users-app /users-app
 WORKDIR /users-app
 
 RUN cd /users-app && yarn install
+RUN yarn global add nodaemon
 
 CMD ["yarn", "start"]
